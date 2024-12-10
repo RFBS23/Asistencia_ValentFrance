@@ -53,3 +53,5 @@ C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Views\obj\Debug\V
 C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Views\obj\Debug\Views.csproj.Up2Date
 C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Views\obj\Debug\Views.exe
 C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Views\obj\Debug\Views.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Views\bin\Debug\Guna.Charts.WinForms.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Views\bin\Debug\Guna.Charts.WinForms.xml

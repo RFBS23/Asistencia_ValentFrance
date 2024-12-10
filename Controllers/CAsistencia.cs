@@ -2,6 +2,7 @@
 using Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,5 +33,16 @@ namespace Controllers
                 return obj_asistencia.Registrar(obj, out Mensaje);
             }
         }
+
+        public DataTable ObtenerEmpleadosPorDia()
+        {
+            return obj_asistencia.ObtenerEmpleadosPorDia();
+        }
+
+        public DataTable ObtenerEmpleadosPorMes()
+        {
+            return obj_asistencia.ObtenerEmpleadosPorMes();
+        }
+
     }
 }

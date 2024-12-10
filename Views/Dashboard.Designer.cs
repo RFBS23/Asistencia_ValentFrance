@@ -28,14 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panelFormularios = new Guna.UI2.WinForms.Guna2Panel();
+            this.chartAsisMes = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartAsistencias = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.banner = new Guna.UI2.WinForms.Guna2Panel();
             this.lblhora = new System.Windows.Forms.Label();
             this.lblfecha = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblnombre = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelMenu = new Guna.UI2.WinForms.Guna2Panel();
@@ -44,25 +51,75 @@
             this.btnHorarios = new Guna.UI2.WinForms.Guna2Button();
             this.btnCargos = new Guna.UI2.WinForms.Guna2Button();
             this.btnEmpleados = new Guna.UI2.WinForms.Guna2Button();
-            this.btninformacion = new Guna.UI2.WinForms.Guna2Button();
             this.btnUsuarios = new Guna.UI2.WinForms.Guna2Button();
             this.btnInicio = new Guna.UI2.WinForms.Guna2Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelFormularios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAsisMes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAsistencias)).BeginInit();
             this.banner.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFormularios
             // 
             this.panelFormularios.AutoScroll = true;
+            this.panelFormularios.Controls.Add(this.label1);
+            this.panelFormularios.Controls.Add(this.label4);
+            this.panelFormularios.Controls.Add(this.tableLayoutPanel1);
             this.panelFormularios.Controls.Add(this.banner);
             this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormularios.Location = new System.Drawing.Point(0, 131);
             this.panelFormularios.Name = "panelFormularios";
             this.panelFormularios.Size = new System.Drawing.Size(1519, 592);
             this.panelFormularios.TabIndex = 3;
+            // 
+            // chartAsisMes
+            // 
+            this.chartAsisMes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.chartAsisMes.BorderSkin.BackColor = System.Drawing.Color.IndianRed;
+            chartArea1.Name = "ChartArea1";
+            this.chartAsisMes.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartAsisMes.Legends.Add(legend1);
+            this.chartAsisMes.Location = new System.Drawing.Point(739, 3);
+            this.chartAsisMes.Name = "chartAsisMes";
+            this.chartAsisMes.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartAsisMes.Series.Add(series1);
+            this.chartAsisMes.Size = new System.Drawing.Size(731, 322);
+            this.chartAsisMes.TabIndex = 3;
+            this.chartAsisMes.Tag = "Asistencia de empleados por meses";
+            this.chartAsisMes.Text = "chart2";
+            // 
+            // chartAsistencias
+            // 
+            this.chartAsistencias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.Name = "ChartArea1";
+            this.chartAsistencias.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartAsistencias.Legends.Add(legend2);
+            this.chartAsistencias.Location = new System.Drawing.Point(3, 3);
+            this.chartAsistencias.Name = "chartAsistencias";
+            this.chartAsistencias.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartAsistencias.Series.Add(series2);
+            this.chartAsistencias.Size = new System.Drawing.Size(730, 322);
+            this.chartAsistencias.TabIndex = 2;
+            this.chartAsistencias.Text = "chart1";
             // 
             // banner
             // 
@@ -74,7 +131,6 @@
             this.banner.Controls.Add(this.lblfecha);
             this.banner.Controls.Add(this.label3);
             this.banner.Controls.Add(this.label2);
-            this.banner.Controls.Add(this.lblnombre);
             this.banner.Controls.Add(this.guna2Panel2);
             this.banner.FillColor = System.Drawing.Color.White;
             this.banner.Location = new System.Drawing.Point(19, 12);
@@ -83,14 +139,14 @@
             this.banner.ShadowDecoration.Depth = 20;
             this.banner.ShadowDecoration.Enabled = true;
             this.banner.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 7, 7);
-            this.banner.Size = new System.Drawing.Size(1476, 202);
+            this.banner.Size = new System.Drawing.Size(1476, 183);
             this.banner.TabIndex = 1;
             // 
             // lblhora
             // 
             this.lblhora.AutoSize = true;
             this.lblhora.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhora.Location = new System.Drawing.Point(24, 160);
+            this.lblhora.Location = new System.Drawing.Point(21, 116);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(64, 17);
             this.lblhora.TabIndex = 7;
@@ -100,7 +156,7 @@
             // 
             this.lblfecha.AutoSize = true;
             this.lblfecha.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfecha.Location = new System.Drawing.Point(24, 143);
+            this.lblfecha.Location = new System.Drawing.Point(21, 99);
             this.lblfecha.Name = "lblfecha";
             this.lblfecha.Size = new System.Drawing.Size(80, 17);
             this.lblfecha.TabIndex = 8;
@@ -110,7 +166,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 103);
+            this.label3.Location = new System.Drawing.Point(19, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(267, 24);
             this.label3.TabIndex = 4;
@@ -120,21 +176,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 78);
+            this.label2.Location = new System.Drawing.Point(19, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(593, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Una solucion integral diseñada para optimizar y gestionar eficientemente";
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.lblnombre.Location = new System.Drawing.Point(23, 37);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(168, 23);
-            this.lblnombre.TabIndex = 2;
-            this.lblnombre.Text = "nombre apellido";
             // 
             // guna2Panel2
             // 
@@ -142,7 +188,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel2.Location = new System.Drawing.Point(1194, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(282, 202);
+            this.guna2Panel2.Size = new System.Drawing.Size(282, 183);
             this.guna2Panel2.TabIndex = 0;
             // 
             // guna2PictureBox1
@@ -156,7 +202,7 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(282, 202);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(282, 183);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -171,7 +217,6 @@
             this.panelMenu.Controls.Add(this.btnHorarios);
             this.panelMenu.Controls.Add(this.btnCargos);
             this.panelMenu.Controls.Add(this.btnEmpleados);
-            this.panelMenu.Controls.Add(this.btninformacion);
             this.panelMenu.Controls.Add(this.btnUsuarios);
             this.panelMenu.Controls.Add(this.btnInicio);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -219,7 +264,7 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1820, 37);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1551, 37);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(28, 47);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -327,39 +372,6 @@
             this.btnEmpleados.Text = "       Empleados";
             this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
-            // btninformacion
-            // 
-            this.btninformacion.Animated = true;
-            this.btninformacion.BackColor = System.Drawing.Color.Transparent;
-            this.btninformacion.BorderRadius = 10;
-            this.btninformacion.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btninformacion.CheckedState.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.btninformacion.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
-            this.btninformacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btninformacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btninformacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btninformacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btninformacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btninformacion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btninformacion.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.btninformacion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninformacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(122)))), ((int)(((byte)(141)))));
-            this.btninformacion.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btninformacion.HoverState.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.btninformacion.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
-            this.btninformacion.Image = ((System.Drawing.Image)(resources.GetObject("btninformacion.Image")));
-            this.btninformacion.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btninformacion.ImageSize = new System.Drawing.Size(50, 50);
-            this.btninformacion.IndicateFocus = true;
-            this.btninformacion.Location = new System.Drawing.Point(1565, 25);
-            this.btninformacion.Name = "btninformacion";
-            this.btninformacion.PressedColor = System.Drawing.Color.Transparent;
-            this.btninformacion.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.btninformacion.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
-            this.btninformacion.Size = new System.Drawing.Size(251, 68);
-            this.btninformacion.TabIndex = 10;
-            this.btninformacion.Text = "         Información";
-            // 
             // btnUsuarios
             // 
             this.btnUsuarios.Animated = true;
@@ -428,6 +440,48 @@
             this.btnInicio.Text = "      Inicio";
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.chartAsisMes, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.chartAsistencias, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 252);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1473, 328);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1148, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 24);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Cantidad de asistencias por meses";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 214);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(212, 24);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Asistencia por empleados";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -439,12 +493,17 @@
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dashboard_FormClosing);
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelFormularios.ResumeLayout(false);
+            this.panelFormularios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAsisMes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAsistencias)).EndInit();
             this.banner.ResumeLayout(false);
             this.banner.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -457,11 +516,9 @@
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblnombre;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel panelMenu;
-        private Guna.UI2.WinForms.Guna2Button btninformacion;
         private Guna.UI2.WinForms.Guna2Button btnUsuarios;
         private Guna.UI2.WinForms.Guna2Button btnInicio;
         private Guna.UI2.WinForms.Guna2Button btnEmpleados;
@@ -469,5 +526,10 @@
         private Guna.UI2.WinForms.Guna2Button btnCargos;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnAsistencia;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartAsisMes;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartAsistencias;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

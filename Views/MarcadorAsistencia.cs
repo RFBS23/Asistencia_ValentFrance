@@ -75,5 +75,14 @@ namespace Views
             txtasistencia.Select();
         }
 
+        private void txtasistencia_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnregistroasistencia_Click(sender, e);
+
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }

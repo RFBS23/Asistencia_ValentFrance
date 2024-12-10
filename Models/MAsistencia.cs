@@ -119,5 +119,38 @@ namespace Models
 
             return idasistenciagenerado;
         }
+
+        public DataTable ObtenerEmpleadosPorDia()
+        {
+            using (SqlConnection conexion = new SqlConnection(Conexion.cadena))
+            {
+                SqlCommand cmd = new SqlCommand("sp_obtener_empleados_con_asistencias", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                conexion.Open();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ObtenerEmpleadosPorMes()
+        {
+            using (SqlConnection conexion = new SqlConnection(Conexion.cadena))
+            {
+                SqlCommand cmd = new SqlCommand("sp_obtener_empleados_por_mes", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                conexion.Open();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
     }
 }

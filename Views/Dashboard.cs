@@ -1,4 +1,5 @@
-﻿using Entity;
+﻿using Controllers;
+using Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace Views
     public partial class Dashboard : Form
     {
         private static Usuarios usuarioActual;
-        public Dashboard(Usuarios objusuario = null)
+        public Dashboard(Entity.Usuarios objusuario = null)
         {
             InitializeComponent();
             usuarioActual = objusuario;
@@ -77,5 +78,52 @@ namespace Views
         {
             formularioAbierto(new frmAsistencia());
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            DateTime fechaActual = DateTime.Now;
+            lblfecha.Text = $"Fecha ingreso: {fechaActual.Day}/{fechaActual.Month}/{fechaActual.Year}";
+            lblhora.Text = "Hora: " + DateTime.Now.ToString("hh:mm:ss tt");
+
+            CargarChartEmpleadosPorDia();
+            CargarChartEmpleadosPorMes();
+        }
+
+        private CAsistencia obj_casistencia = new CAsistencia();
+
+        private void CargarChartEmpleadosPorDia()
+        {
+            DataTable dt = obj_casistencia.ObtenerEmpleadosPorDia();
+
+            chartAsistencias.Series.Clear();
+            chartAsistencias.Series.Add("Empleados");
+            chartAsistencias.Series["Empleados"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string fecha = Convert.ToDateTime(row["Fecha"]).ToString("dd/MM/yyyy");
+                int totalEmpleados = Convert.ToInt32(row["EmpleadosQueAsistieron"]);
+
+                chartAsistencias.Series["Empleados"].Points.AddXY(fecha, totalEmpleados);
+            }
+        }
+
+        private void CargarChartEmpleadosPorMes()
+        {
+            DataTable dt = obj_casistencia.ObtenerEmpleadosPorMes();
+
+            chartAsisMes.Series.Clear();
+            chartAsisMes.Series.Add("Empleados");
+            chartAsisMes.Series["Empleados"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string mes = row["Mes"].ToString();
+                int totalEmpleados = Convert.ToInt32(row["EmpleadosQueAsistieron"]);
+
+                chartAsisMes.Series["Empleados"].Points.AddXY(mes, totalEmpleados);
+            }
+        }
+
     }
 }

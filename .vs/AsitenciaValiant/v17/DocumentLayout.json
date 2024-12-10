@@ -3,12 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECCB8371-4136-4356-9B24-4818B1EE3F6F}|Views\\Views.csproj|c:\\users\\fabri\\documents\\programacion\\c-sharp\\asitenciavaliant\\views\\marcadorasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECCB8371-4136-4356-9B24-4818B1EE3F6F}|Views\\Views.csproj|solutionrelative:views\\marcadorasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E29B418-DF59-4B9E-AEEC-2C85B5E37FC1}|..\\..\\..\\Advanced Installer\\Projects\\Asistencia - Valiant\\Asistencia - Valiant.aiproj|C:\\Users\\fabri\\Documents\\Advanced Installer\\Projects\\Asistencia - Valiant\\Asistencia - Valiant.aip||{AE40A4D1-A614-4A08-B9E2-B74E011783ED}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECCB8371-4136-4356-9B24-4818B1EE3F6F}|Views\\Views.csproj|c:\\users\\fabri\\documents\\programacion\\c-sharp\\asitenciavaliant\\views\\marcadorasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ECCB8371-4136-4356-9B24-4818B1EE3F6F}|Views\\Views.csproj|solutionrelative:views\\marcadorasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Views||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECCB8371-4136-4356-9B24-4818B1EE3F6F}|Views\\Views.csproj|c:\\users\\fabri\\documents\\programacion\\c-sharp\\asitenciavaliant\\views\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +19,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 169,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +39,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MarcadorAsistencia.cs",
-              "DocumentMoniker": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\Views\\MarcadorAsistencia.cs",
-              "RelativeDocumentMoniker": "Views\\MarcadorAsistencia.cs",
-              "ToolTip": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\Views\\MarcadorAsistencia.cs",
-              "RelativeToolTip": "Views\\MarcadorAsistencia.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAcwDsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T07:52:07.294Z",
+              "DocumentIndex": 1,
+              "Title": "Views",
+              "DocumentMoniker": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\Views\\Views.csproj",
+              "RelativeDocumentMoniker": "Views\\Views.csproj",
+              "ToolTip": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\Views\\Views.csproj",
+              "RelativeToolTip": "Views\\Views.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T19:56:26.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MarcadorAsistencia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\Views\\MarcadorAsistencia.cs",
-              "RelativeDocumentMoniker": "Views\\MarcadorAsistencia.cs",
-              "ToolTip": "C:\\Users\\fabri\\Documents\\Programacion\\C-Sharp\\AsitenciaValiant\\Views\\MarcadorAsistencia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Views\\MarcadorAsistencia.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T07:28:59.894Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "DocumentIndex": 0,
+              "Title": "Asistencia - Valiant.aip",
+              "DocumentMoniker": "C:\\Users\\fabri\\Documents\\Advanced Installer\\Projects\\Asistencia - Valiant\\Asistencia - Valiant.aip",
+              "RelativeDocumentMoniker": "..\\..\\..\\Advanced Installer\\Projects\\Asistencia - Valiant\\Asistencia - Valiant.aip",
+              "ToolTip": "C:\\Users\\fabri\\Documents\\Advanced Installer\\Projects\\Asistencia - Valiant\\Asistencia - Valiant.aip",
+              "RelativeToolTip": "..\\..\\..\\Advanced Installer\\Projects\\Asistencia - Valiant\\Asistencia - Valiant.aip",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T19:43:18.392Z",
+              "EditorCaption": ""
             }
           ]
         }

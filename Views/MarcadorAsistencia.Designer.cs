@@ -140,6 +140,7 @@
             this.txtasistencia.SelectedText = "";
             this.txtasistencia.Size = new System.Drawing.Size(448, 76);
             this.txtasistencia.TabIndex = 1;
+            this.txtasistencia.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtasistencia_KeyDown);
             // 
             // label1
             // 
