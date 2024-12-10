@@ -1,0 +1,9 @@
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\bin\Debug\Models.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\bin\Debug\Models.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\bin\Debug\Entity.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\bin\Debug\Entity.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\obj\Debug\Models.csproj.Up2Date
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\obj\Debug\Models.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Models\obj\Debug\Models.pdb

@@ -1,0 +1,6 @@
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Entity\bin\Debug\Entity.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Entity\bin\Debug\Entity.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Entity\obj\Debug\Entity.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Entity\obj\Debug\Entity.pdb

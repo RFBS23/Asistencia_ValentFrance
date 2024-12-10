@@ -1,0 +1,11 @@
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\bin\Debug\Controllers.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\bin\Debug\Controllers.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\bin\Debug\Entity.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\bin\Debug\Models.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\bin\Debug\Entity.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\bin\Debug\Models.pdb
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\obj\Debug\Controll.01F35609.Up2Date
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\obj\Debug\Controllers.dll
+C:\Users\fabri\Documents\Programacion\C-Sharp\AsitenciaValiant\Controllers\obj\Debug\Controllers.pdb
